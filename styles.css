@@ -64,3 +64,65 @@ section h2 {
 .show-scroll {
     display: block;
 }
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 2rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Social media icons in footer */
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    .scroll-up {
+        bottom: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1rem;
+    }
+}
