@@ -1,67 +1,66 @@
-/* Reset CSS */
+/* Resetting default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-/* Dark Theme */
-body.dark {
-    background-color: #1f1f1f;
-    color: #fff;
-}
-
-/* Light Theme */
-body.light {
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     color: #333;
 }
 
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-header {
-    padding: 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    font-weight: bold;
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 1rem;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: inherit;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
+/* Section styles */
 section {
-    padding: 40px 0;
+    padding: 2rem;
+    margin: 2rem 0;
 }
 
-h2 {
-    margin-bottom: 20px;
+section h2 {
+    margin-bottom: 1rem;
 }
 
-footer {
+/* Scroll to top button styles */
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    padding: 20px 0;
+    border-radius: 50%;
+    display: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Show scroll-up button when user scrolls */
+.show-scroll {
+    display: block;
 }
