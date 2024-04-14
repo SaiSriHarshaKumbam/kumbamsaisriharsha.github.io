@@ -3,68 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Sri Harsha Kumbam's Portfolio</title>
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
 </head>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="mediaqueries.css" />
 <body>
-    <!-- Navigation Menu -->
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav id="desktop-nav">
+        <div class="logo"> Sai Sri Harsha Kumbam</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <img src="./assets/moon.png" alt="Toggle Theme" id="theme-toggle" onclick="toggleTheme()">
+
+            </ul>
+        </div>
     </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Sai Sri Harsha Kumbam</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience "onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+                <img src="./assets/moon.png" alt="Toggle Theme" id="theme-toggle" onclick="toggleTheme()">
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to my Portfolio Webpage</h1>
-        <h1>Hi,
-Sai Sri Harsha here!!! 👋</h1>
-        <li> I'm currently a graduate student in Information Systems, 👀 I’m interested in Data Science 👨‍💻 & Machine Learning 🌐📊📈🖥️</li>
-        <li>🚀 This page is my launchpad for academic exploration, a launchpad for coding ambitions, and a launchpad for shaping my tech-driven future. Join me on this exhilarating journey.</li>
-        <li>Image will be added in this section </li>
-        <!-- Add your image here if desired -->
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profilepic.jpg" alt="Harsha's Profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sai Sri Harsha Kumbam</h1>
+            <p class="section__text__p2">Aspiring Data Analyst</p>
+            <p>Dynamic data analyst with the ability to transform complex data sets into actionable insights. 
+                Skilled in data analysis, visualization and dashboard design, I bring technical expertise and innovative thinking to every project. Committed to continuous learning and passionate about solving problems, I excel at uncovering hidden patterns and trends that guide strategic decisions..</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/KumbamSaiSriHarshaResume.pdf')"
+                >Download Resume</button>
+                <button class="btn btn-color-2" 
+                onclick="location.href='./#contact'"
+                >Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/kumbamsaisriharsha/'"/>
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="location.href='https://github.com/SaiSriHarshaKumbam'"/>
+            </div>
+        </div>
     </section>
-
-    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>Greetings! I'm a proactive Master's student in Information Systems at UMBC, fueled by a passion for innovation and technology.</p>
-        <p>With a strong foundation in programming languages like Python and Java, alongside expertise in database management systems, laying the groundwork for a dynamic career in the tech industry.</p>
-        <p>During my tenure at Cognizant Technology Solutions, I contributed to several impactful projects, showcasing my ability to turn data into actionable insights. Collaborating closely with stakeholders, I played a key role in optimizing employee suggestion processes, leveraging advanced machine learning techniques to enhance efficiency and drive employee engagement.</p>
-        <p>Additionally, I worked on projects that used advanced data analytics tools to provide actionable insights to make informed decisions. These experiences provided me with invaluable skills in data analysis, project management, and teamwork, which set the stage for my transition into professional positions in information technology, data science, and software engineering.</p>
-        <p>🚀I am excited to use my knowledge and energy as I embark on the next chapter of my life, taking on new challenges and making a significant impact on the technology industry. Let's connect and find ways to bring creative ideas to life together and bring about positive change.</p>
-        <!-- Add your about content here -->
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profilebgvpic.jpg" alt="Profile picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Programmer Analyst <br>Cognizant</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>United States<br>MS in Information Systems from University of Maryland Baltimore County (UMBC) <br>GPA: 3.7/4.0</p>
+                        <p>India<br>B.Tech JNTUH <br>GPA:8.5/10.0 </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a dedicated data professional with expertise in data analysis, visualization and dashboard design. 
+                        With a background in information systems and a passion for problem solving, I excel at turning complex data sets into actionable insights. 
+                        I thrive in dynamic environments and am committed to continuous learning and growth in the field of data science.
+                    </p>
+                    <p>My Skills Are: Excel, Power-BI, Tableau, SQL, Python,  Java, C, JavaScript, HTML, CSS</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#experience'">
     </section>
-
-    <!-- Projects Section -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programmer Analyst</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Cognizant</h3>
+                                <p>In this role, I closely collaborated with stakeholders and business analysts to gather and analyze requirements, ensuring alignment with project objectives and client expectations.
+                                    <!-- Add a "Read More" link to expand the text -->
+                                    <span id="exp1-more" class="read-more" style="display: none;">I contributed to the development and maintenance of software applications using Java, working effectively in a cross-functional team environment. Utilizing Agile methodologies, such as JIRA, facilitated iterative development cycles. I managed a PostgreSQL database for efficient data storage and retrieval. Additionally, I conducted comprehensive code reviews, unit testing, and debugging, resulting in a 20% improvement in code quality and a 15% reduction in post-release defects. Collaborating with the client's team on a data migration project, I ensured minimal disruption to business operations while upgrading legacy Java applications.
+                                        I maintained thorough technical documentation to ensure project scalability and continued development, including release notes, API documentation, and system designs.</span>
+                                    <!-- Add a "Read More" link to expand the text -->
+                                    <a href="#" onclick="toggleReadMore('exp1-more',event)">Read More</a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programmer Analyst Trainee</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Cognizant</h3>
+                                <p>Analyzed requirements and functional specifications to ensure they aligned with project objectives. I conducted ad-hoc and exploratory data analysis 
+                                    <span id="exp2-more" class="read-more" style="display: none;">to address concerns and presented findings to project teams and clients.
+                                        <!-- Add a "Read More" link to expand the text -->I led data cleaning, transformation, and validation tasks using tools like pandas and NumPy. Additionally, I developed and maintained automation scripts and data pipelines to optimize workflows. I actively participated in Agile practices, including Sprint planning and daily stand-up meetings, to foster collaboration and continuous improvement within the team.</span>
+                                    <!-- Add a "Read More" link to expand the text -->
+                                    <a href="#" onclick="toggleReadMore('exp2-more',event)">Read More</a>
+                                </p>
+                            </div>
+                            
+                        </article>
+                        
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Intern</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Cognizant</h3>
+                                <p> Received comprehensive training in Java development and Automation Testing, gaining foundational knowledge in programming concepts and software testing methodologies. 
+                                    <!-- Add a "Read More" link to expand the text -->
+                                    <span id="exp3-more" class="read-more" style="display: none;">Acquired hands-on experience with frameworks like TestNG, JUnit, Page Object Model, and Cucumber. Collaborated with senior developers and testers on projects, contributing to developmental tasks and testing activities within a cross-functional team. Created visually compelling dashboards and interactive visualizations using tools like Tableau and matplotlib/seaborn to present data findings clearly to non-technical stakeholders.
+                                        Proactively identified and resolved issues, contributing to project success, while continuously seeking opportunities for learning and growth through research and hands-on experience.</span>
+                                    <!-- Add a "Read More" link to expand the text -->
+                                    <a href="#" onclick="toggleReadMore('exp3-more',event)">Read More</a>
+                                </p>
+                            </div>
+                            
+                        </article>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
     <section id="projects">
-        <h2>My Projects</h2>
-        <h3>Project-1</h3>
-        <p>Title:Modeling Quality of Suggestions</p>
-        <p>href: https://google.com</p>
-        <p>The Project aimed at optimizing the review process of employee suggestions within a 
-            large human resource company’s online forum.</p>
-        <p>Conducted thorough data analysis to identify anomalies, ensuring data integrity, and creating eye-catching engagement metric visuals.</p>
-        <p>Utilized advanced machine-learning techniques to customize recommendations based on engagement metrics and content relevancy, resulting in a reduction of manual work and improved accuracy in staff input assessment.</p>
-        <p>Investigated feature importance revealing insights beyond algorithms, such as the predictive power of upvotes on recommendation quality and the correlation between employee longevity and suggestion quality
-        </p>
-        <!-- Add your projects grid or list here -->
-    </section>
-
-    <!-- Contact Section -->
+        <p class="section__text__p1">Browse my Recent Work</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers"> 
+                <div class="row">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project1.png" alt="Project 1" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">“Modeling Quality of Suggestions</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FinalProject_IS733'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://sites.google.com/umbc.edu/qualityofsuggestions/home'">Live Demo</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project2.jpg" alt="Project 2" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">“Baltimore Crime Analysis</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/Baltimore-Crime-Analysis'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/Baltimore-Crime-Analysis/blob/main/BaltimoreCityCrimeAnalysis_SaiSriHarsha_Kumbam.ipynb'">Live Demo</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project3.png" alt="Project 3" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Airline Passenger Satisfaction</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/Airline-Passenger-Data-Analysis-and-Visualization'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/Airline-Passenger-Data-Analysis-and-Visualization/blob/main/Grp5_cleaneddata.ipynb'">Live Demo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/project4.png" alt="Project 4" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Food Truck Database Management System</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FoodTruck_Database/tree/main'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FoodTruck_Database/blob/main/FoodTruckDatabase.txt'">Live Demo</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/explorer pic.jpg" alt="Project 5" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Five</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FoodTruck_Database/tree/main'">Github</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FoodTruck_Database/blob/main/FoodTruckDatabase.txt'">Live Demo</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/mediumproject.jpeg" alt="Project 6" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Balanced Perspective on Prediction and Inference</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@saisriharshakumbam/a-case-study-report-on-a-balanced-perspective-on-prediction-and-inference-for-data-science-in-e89976183a0f'">Medium</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more rows and projects as needed -->
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>    
     <section id="contact">
-        <h2>Contact Me</h2>
-        <!-- Add your contact form and social media links here -->
+        <p class="section__text__p1">Let's Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" 
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:saisriharshakumbam@gmail.com">saisriharshakumbam@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" 
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/kumbamsaisriharsha/?trk=opento_sprofile_goalscard">LinkedIn</a>
+                </p>
+            </div>
+        </div>
     </section>
-
-    <!-- Scroll to Top Button -->
-    <a id="scroll-up" href="#home" class="scroll-up">↑</a>
-
-    <!-- Link to your JavaScript file -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 SaiSriHarshaKumbam. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
