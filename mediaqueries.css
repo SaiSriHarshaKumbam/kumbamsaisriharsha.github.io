@@ -17,7 +17,15 @@
     }
     #hamburger-nav{
         display: flex;
+        justify-content: space-between; /* Space between items */
+        align-items: center; /* Vertically align items */
     }
+
+    #theme-toggle {
+        display: block; /* Show the theme toggle button */
+        margin-left: 20px; /* Adjust spacing as needed */
+    }
+
     #experience, .experience-details-container {
         margin-top: 2rem;
     }
@@ -42,6 +50,12 @@
     .about-containers {
         margin-top: 0;
     }
+    .details-container {
+        flex: 0 1 calc(50% - 2rem); /* Adapt the width for 2 columns layout on tablet screens */
+    }
+    #projects {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
 
 
@@ -50,8 +64,9 @@
         height: 40vh;
     }
     #profile {
-        height: 90vh;
-        margin-bottom: 0;
+        height: auto;
+         /*margin-bottom: 0;*/
+         padding-bottom: 2rem;
     }
     article {
         font-size: 1rem;
@@ -72,9 +87,17 @@
     .nav-links li a {
         font-size: 0.79rem;
     }
+    /*
     .experience-sub-title, .experience-details-container p {
         font-size: 1.25rem;
         text-align: justify;
+    }
+    */
+    .experience-sub-title, .experience-details-container p {
+        font-size: 1rem; /* Adjusted for smaller text */
+        text-align: left; /* Align to the left instead of justify to avoid spacing issues */
+        line-height: 1.2; /* Improve line spacing */
+        word-wrap: break-word; /* Wrap long words that can't be broken naturally */
     }
     .logo {
         font-size: 1.5rem;
@@ -85,9 +108,18 @@
         text-align: center;
     }
     .section__pic-container{
-        width: auto;
+       /* width: auto;
         height: 70vw;
-        justify-content: center;
+         */
+        width: auto; /* Full width of the container */
+        height: 70vw;
+        max-width: 300px; /* Max width to not be too large */
+         /* Height is auto to maintain aspect ratio */
+         justify-content: center;
+        margin: 0 auto 2rem; /* Centered with margin bottom */
+    }
+    .section__text {
+        margin: 0 2rem; /* Add some margin to the sides for padding */
     }
     .section__text__p2 {
         font-size: 1.25rem;
@@ -98,6 +130,54 @@
     .text-container {
         text-align: justify;
     }
+
+    .details-container {
+        padding: 1rem; /* Adjust padding for detail containers */
+        flex: 1 1 calc(100% - 2rem); /* Full width minus the margin */
+        margin-bottom: 2rem; /* Margin bottom for spacing */
+        width: auto; /* Auto width */
+    }
+
+    /* Styles for the EXPERIENCE SECTION */
+    .experience-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+    }
+
+    .details-container {
+        padding: 16px;
+        
+        background: white;
+        border-radius: 2rem;
+        border: 1px solid rgb(163, 163, 163);
+        text-align: center;
+        margin-bottom: 20px;
+        /*max-width: 90%; */ /* Limit container width */
+        box-sizing: border-box; /* Ensure padding doesn't affect width */
+        width: auto; /* Adapt width to the size of the device */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+
+
+    .article-container {
+       /* display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; *//* Center content horizontally */
+        gap: 2.5rem;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .article {
+        width: 100%;
+        box-sizing: border-box;
+        flex: 1 1 100%; /* Take full width on small screens */
+    }
+
+
+    
 }
 
 
@@ -117,6 +197,12 @@
     }
 }
 
-
-
+@media screen and (max-width: 768px) {
+    .details-container {
+        flex: 0 1 100%; /* Full width for mobile screens */
+    }
+    #projects {
+        grid-template-columns: 1fr; /* Stack them on top of each other on smaller screens */
+    }
+}
 

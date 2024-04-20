@@ -2,8 +2,11 @@
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
+    
     menu.classList.toggle("open");
     icon.classList.toggle("open");
+
+    
 }
 /*
 // Configure EmailJS
@@ -200,5 +203,41 @@ function toggleReadMore(expId, event) {
 
 
 
-/*Projects load more */
+/*Contact form */
+// Wait until the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Attach the submit event listener to the form
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Collect the form data
+        var data = new FormData(event.target);
+
+        // Perform the fetch call to Formspree
+        fetch("https://formspree.io/f/xoqgydzy", {
+            method: 'POST',
+            body: data,
+            headers: {
+                'Accept': 'application/json', // Tell Formspree to send JSON response
+            },
+        }).then(response => {
+            if (response.ok) {
+                // If the response is OK, alert success and reset the form
+                alert('Success');
+                document.getElementById('contact-form').reset();
+            } else {
+                // If the response is not OK, parse the JSON response to get the error
+                response.json().then(data => {
+                    console.error('Formspree error:', data);
+                    alert('Error: ' + data.error);
+                });
+            }
+        }).catch(error => {
+            // Catch any other errors and alert the user
+            console.error('Fetch error:', error);
+            alert('Error sending message.');
+        });
+    });
+});
 

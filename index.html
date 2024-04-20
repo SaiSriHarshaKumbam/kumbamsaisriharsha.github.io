@@ -39,6 +39,7 @@
             </div>
         </div>
     </nav>
+    
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profilepic.jpg" alt="Harsha's Profile pic">
@@ -97,7 +98,7 @@
                         With a background in information systems and a passion for problem solving, I excel at turning complex data sets into actionable insights. 
                         I thrive in dynamic environments and am committed to continuous learning and growth in the field of data science.
                     </p>
-                    <p>My Skills Are: Excel, Power-BI, Tableau, SQL, Python,  Java, C, JavaScript, HTML, CSS</p>
+                    <p> <b>My Skills Are: Excel, Power-BI, Tableau, SQL, Python,  Java, C, JavaScript, HTML, CSS</b> </p>
                 </div>
             </div>
         </div>
@@ -118,10 +119,10 @@
                             class="icon">
                             <div>
                                 <h3>Cognizant</h3>
-                                <p>In this role, I closely collaborated with stakeholders and business analysts to gather and analyze requirements, ensuring alignment with project objectives and client expectations.
+                                <p> Closely collaborated with stakeholders and business analysts to gather and analyze requirements, ensuring alignment with project objectives and client expectations.
                                     <!-- Add a "Read More" link to expand the text -->
-                                    <span id="exp1-more" class="read-more" style="display: none;">I contributed to the development and maintenance of software applications using Java, working effectively in a cross-functional team environment. Utilizing Agile methodologies, such as JIRA, facilitated iterative development cycles. I managed a PostgreSQL database for efficient data storage and retrieval. Additionally, I conducted comprehensive code reviews, unit testing, and debugging, resulting in a 20% improvement in code quality and a 15% reduction in post-release defects. Collaborating with the client's team on a data migration project, I ensured minimal disruption to business operations while upgrading legacy Java applications.
-                                        I maintained thorough technical documentation to ensure project scalability and continued development, including release notes, API documentation, and system designs.</span>
+                                    <span id="exp1-more" class="read-more" style="display: none;">I contributed to the development and maintenance of software applications using Java, working effectively in a cross-functional team environment.
+                                        Through comprehensive code reviews and testing, I achieved a 20% improvement in code quality and a 15% reduction in post-release defects.</span>
                                     <!-- Add a "Read More" link to expand the text -->
                                     <a href="#" onclick="toggleReadMore('exp1-more',event)">Read More</a>
                                 </p>
@@ -138,10 +139,11 @@
                             class="icon">
                             <div>
                                 <h3>Cognizant</h3>
-                                <p>Analyzed requirements and functional specifications to ensure they aligned with project objectives. I conducted ad-hoc and exploratory data analysis 
-                                    <span id="exp2-more" class="read-more" style="display: none;">to address concerns and presented findings to project teams and clients.
-                                        <!-- Add a "Read More" link to expand the text -->I led data cleaning, transformation, and validation tasks using tools like pandas and NumPy. Additionally, I developed and maintained automation scripts and data pipelines to optimize workflows. I actively participated in Agile practices, including Sprint planning and daily stand-up meetings, to foster collaboration and continuous improvement within the team.</span>
-                                    <!-- Add a "Read More" link to expand the text -->
+                                <p>Played a key role in software development projects. This included analyzing requirements and conducting data analysis to provide valuable insights.
+                                    <span id="exp2-more" class="read-more" style="display: none;"> I also led data cleaning and automation efforts, ensuring data accuracy and workflow efficiency. Active participation in Agile practices 
+                                        promoted collaboration and contributed to project success and personal development.
+                                        <!-- Add a "Read More" link to expand the text --></span>
+                                    
                                     <a href="#" onclick="toggleReadMore('exp2-more',event)">Read More</a>
                                 </p>
                             </div>
@@ -159,10 +161,11 @@
                             class="icon">
                             <div>
                                 <h3>Cognizant</h3>
-                                <p> Received comprehensive training in Java development and Automation Testing, gaining foundational knowledge in programming concepts and software testing methodologies. 
+                                <p> Gained foundational knowledge in Java development and Automation Testing, working with frameworks like TestNG and JUnit. Collaborating closely with senior developers,
                                     <!-- Add a "Read More" link to expand the text -->
-                                    <span id="exp3-more" class="read-more" style="display: none;">Acquired hands-on experience with frameworks like TestNG, JUnit, Page Object Model, and Cucumber. Collaborated with senior developers and testers on projects, contributing to developmental tasks and testing activities within a cross-functional team. Created visually compelling dashboards and interactive visualizations using tools like Tableau and matplotlib/seaborn to present data findings clearly to non-technical stakeholders.
-                                        Proactively identified and resolved issues, contributing to project success, while continuously seeking opportunities for learning and growth through research and hands-on experience.</span>
+                                    <span id="exp3-more" class="read-more" style="display: none;"> I contributed to ongoing projects and created clear, visually compelling dashboards using tools such as Tableau. 
+                                        Proactively identifying and resolving issues, I played a key role in project success while continuously seeking opportunities for learning and growth.
+                                    </span>
                                     <!-- Add a "Read More" link to expand the text -->
                                     <a href="#" onclick="toggleReadMore('exp3-more',event)">Read More</a>
                                 </p>
@@ -227,16 +230,7 @@
                             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FoodTruck_Database/blob/main/FoodTruckDatabase.txt'">Live Demo</button>
                         </div>
                     </div>
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./assets/explorer pic.jpg" alt="Project 5" class="project-img">
-                        </div>
-                        <h2 class="experience-sub-title project-title">Project Five</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FoodTruck_Database/tree/main'">Github</button>
-                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FoodTruck_Database/blob/main/FoodTruckDatabase.txt'">Live Demo</button>
-                        </div>
-                    </div>
+                    
                     <div class="details-container color-container">
                         <div class="article-container">
                             <img src="./assets/mediumproject.jpeg" alt="Project 6" class="project-img">
@@ -255,7 +249,15 @@
     <section id="contact">
         <p class="section__text__p1">Let's Get in Touch</p>
         <h1 class="title">Contact Me</h1>
+        <form id="contact-form">
+            <input type="name" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <script src="script.js"></script>
         <div class="contact-info-upper-container">
+        
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" 
                 class="icon contact-icon email-icon">
@@ -268,7 +270,11 @@
                 <p><a href="https://www.linkedin.com/in/kumbamsaisriharsha/?trk=opento_sprofile_goalscard">LinkedIn</a>
                 </p>
             </div>
+            
         </div>
+        <!-- Start of the contact form section -->
+    
+        
     </section>
     <footer>
         <nav>
