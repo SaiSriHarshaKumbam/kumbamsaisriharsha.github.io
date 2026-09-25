@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    
 </head>
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="mediaqueries.css" />
@@ -17,7 +18,6 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <img src="./assets/moon.png" alt="Toggle Theme" id="theme-toggle" onclick="toggleTheme()">
-
             </ul>
         </div>
     </nav>
@@ -25,17 +25,16 @@
         <div class="logo"> Sai Sri Harsha Kumbam</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience "onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects"onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact"onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 <img src="./assets/moon.png" alt="Toggle Theme" id="theme-toggle" onclick="toggleTheme()">
-
             </div>
         </div>
     </nav>
@@ -47,47 +46,41 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Sai Sri Harsha Kumbam</h1>
-            <p class="section__text__p2">Software Test Engineer</p>
-            <p> Results-driven Software Test Engineer with expertise in automating complex workflows, hardware/software integration, and production testing in high-volume enterprise environments. 
-                Skilled in Python, Bash, Ansible, Docker, Selenium, CI/CD pipelines, and Linux system validation.
-                Experienced in building real-time monitoring platforms, dynamic dashboards, and automated hardware diagnostics to optimize system reliability and production efficiency.</p>
+            <p class="section__text__p2">Software Development Engineer</p>
+            <p>
+                Results-driven Software Development Engineer with extensive experience developing scalable software applications, backend automation frameworks, and hardware/software integration suites for enterprise cloud and production environments. 
+                Skilled in Python, Java, Bash, RESTful API design, Docker, NGINX, and network boot infrastructure (PXE, VMware).
+            </p>
             <div class="btn-container">
-                <button class="btn btn-color-2" 
-                onclick="window.open('./assets/Sai Sri Harsha Kumbam Resume.pdf')"  
-                >Download Resume</button>
-                <button class="btn btn-color-2" 
-                onclick="location.href='./#contact'"
-                >Contact Info</button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/SaiSriHarshaKumbamResume_updated.pdf')">Download Resume</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/kumbamsaisriharsha/'"/>
-                <img src="./assets/github.png" alt="My Github profile"
-                class="icon" onclick="location.href='https://github.com/SaiSriHarshaKumbam'"/>
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kumbamsaisriharsha/'"/>
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/SaiSriHarshaKumbam'"/>
             </div>
         </div>
     </section>
+
     <section id="about">
         <p class="section__text__p1">Get to know more</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/profilebgvpic.jpg" alt="Profile picture"
+                <img src="./assets/profilebgvpic.jpg" alt="Profile picture" 
                 class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/experience.png" 
-                        alt="Experience icon"
+                        alt="Experience icon" 
                         class="icon">
                         <h3>Experience</h3>
-                        <p>4+ years <br>Software Engineer<br>Quanta Computer Inc. 廣達電腦</p>
+                        <p>4+ years <br>Software Development Test Engineer<br>Jabil Inc.</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" 
-                        alt="Education icon"
-                        class="icon">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
                         <h3>Education</h3>
                         <p>United States<br>MS in Information Systems from UMBC <br>GPA: 3.7/4.0</p>
                         <p>India<br>B.Tech in EEE from GCET <br>GPA: 3.67/4.0 </p>
@@ -95,30 +88,50 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        I am an automation and test engineer with a strong background in Information Systems, test automation frameworks, and hardware/software validation. 
-                        Passionate about solving complex production challenges, I specialize in streamlining deployment workflows, microservices validation, and diagnostic tool development. 
-                        Experienced across Python, Linux, Ansible, Docker, Selenium, and full-stack monitoring applications.
+                        I am a Software Development Engineer with deep domain knowledge in backend automation frameworks, distributed cloud architecture, and systems validation.
+                        Passionate about solving complex production challenges, I specialize in streamlining deployment workflows, designing automated diagnostic engines, and building high-performance test applications.
                     </p>
-                    <p> <b>My Skills Are: Python, Bash, Ansible, Docker, NGINX, Selenium, TestNG, Jenkins, SQL, Linux, React, Node.js</b> </p>
+                    <p> 
+                        <b>Core Stack:</b> Python, Bash, Java, Docker, NGINX, RESTful APIs, IPMI/Redfish, VMware, PXE Boot, React, Node.js, SQL, and Azure DevOps / Jira.
+                    </p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#experience'">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
     </section>
+
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
 
+                <!-- Jabil Entry -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Development Test Engineer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Jabil Inc.</h3>
+                                <p>
+                                    Architect, develop, and maintain end-to-end test software applications, test suites, and automation frameworks using Python, Java, and Bash for enterprise server (L10) and rack-level (L11) environments.
+                                    <span id="exp-jabil-more" class="read-more" style="display: none;">
+                                        Build automated diagnostic engines and test runners integrating IPMI and Redfish REST APIs. Automate hardware stress testing (FIO, mprime, Linpack, ptugen, memtester) across CPUs, memory, NVMe/SSDs, and GPUs. Configure PXE boot, DHCP Relay, NGINX, and VMware VMs for unattended provisioning, and manage Git release lifecycles and Azure DevOps sprint deliverables.
+                                    </span>
+                                    <a href="#" onclick="toggleReadMore('exp-jabil-more',event)">Read More</a>
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Quanta Entry -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Software Test Engineer</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="Experience icon"
-                                 class="icon">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>Quanta Computer Inc. 廣達電腦</h3>
                                 <p>
@@ -133,13 +146,12 @@
                     </div>
                 </div>
 
+                <!-- GVA Infotech Entry -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Software Engineer</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="Experience icon"
-                                 class="icon">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>GVA Infotech</h3>
                                 <p>
@@ -154,16 +166,16 @@
                     </div>
                 </div>
                 
+                <!-- Cognizant Entry -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Programmer Analyst</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>Cognizant</h3>
-                                <p> Engineered end-to-end regression automation using Selenium WebDriver, TestNG, and Maven for enterprise and fintech platforms.
+                                <p> 
+                                    Engineered end-to-end regression automation using Selenium WebDriver, TestNG, and Maven for enterprise and fintech platforms.
                                     <span id="exp1-more" class="read-more" style="display: none;">Built a data-driven testing framework using Apache POI to handle complex dynamic test datasets. Designed API test scenarios in Postman, managed Jira defect workflows, and integrated automated test runs into Jenkins CI/CD pipelines.</span>
                                     <a href="#" onclick="toggleReadMore('exp1-more',event)">Read More</a>
                                 </p>
@@ -172,13 +184,12 @@
                     </div>
                 </div>
 
+                <!-- Cognizant Intern Entry -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Software Testing Intern</h2>
                     <div class="article-container">
                         <article>
-                            <img src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon">
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>Cognizant</h3>
                                 <p>Developed and maintained Selenium test automation scripts across client applications, minimizing manual test overhead.
@@ -189,13 +200,12 @@
                         </article>
                     </div>
                 </div>
+
             </div>
         </div>
-        <img src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon arrow"
-        onclick="location.href='./#projects'">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
+
     <section id="projects">
         <p class="section__text__p1">Browse my Recent Work</p>
         <h1 class="title">Projects</h1>
@@ -244,7 +254,6 @@
                             <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/SaiSriHarshaKumbam/FoodTruck_Database/blob/main/FoodTruckDatabase.txt'">Live Demo</button>
                         </div>
                     </div>
-                    
                     <div class="details-container color-container">
                         <div class="article-container">
                             <img src="./assets/mediumproject.jpeg" alt="Project 6" class="project-img">
@@ -265,28 +274,26 @@
                         </div>
                     </div>
                 </div> 
-                <!-- Add more rows and projects as needed -->
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>    
+
     <section id="contact">
         <p class="section__text__p1">Let's Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <form id="contact-form">
-            <input type="name" id="name" name="name" placeholder="Your Name" required>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
             <input type="email" id="email" name="email" placeholder="Your Email" required>
             <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Submit</button>
         </form>
         <script src="script.js"></script>
         <div class="contact-info-upper-container">
-        
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" 
                 class="icon contact-icon email-icon">
-                <p><a href="mailto:saisriharshakumbam@gmail.com">saisriharshakumbam@gmail.com</a>
-                </p>
+                <p><a href="mailto:saisriharshakumbam@gmail.com">saisriharshakumbam@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" 
@@ -294,9 +301,9 @@
                 <p><a href="https://www.linkedin.com/in/kumbamsaisriharsha/?trk=opento_sprofile_goalscard">LinkedIn</a>
                 </p>
             </div>
-            
         </div>
     </section>
+
     <footer>
         <nav>
             <div class="nav-links-container">
